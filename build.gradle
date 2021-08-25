@@ -25,6 +25,11 @@ dependencies {
     //ARGON2
     implementation 'de.mkammerer:argon2-jvm:2.10.1'
 
+    //PDF
+    // https://mvnrepository.com/artifact/com.itextpdf/itextpdf
+    implementation("com.itextpdf:itextpdf:5.5.13.2")
+
+
 }
 
 test {
