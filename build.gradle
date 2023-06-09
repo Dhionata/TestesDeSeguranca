@@ -1,5 +1,5 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.5.21'
+    id 'org.jetbrains.kotlin.jvm' version '1.8.21'
     id 'java'
 }
 
@@ -12,22 +12,22 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.5.21'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.8.21'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+    implementation 'de.mkammerer:argon2-jvm:2.10.1'
+
 
     //My dependencies
 
     // https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on
     //SHA3
-    implementation("org.bouncycastle:bcprov-jdk15on:1.69")
+    implementation('org.bouncycastle:bcprov-jdk15on:1.70')
 
     //ARGON2
-    implementation 'de.mkammerer:argon2-jvm:2.10.1'
-
-    //PDF
-    // https://mvnrepository.com/artifact/com.itextpdf/itextpdf
-    implementation("com.itextpdf:itextpdf:5.5.13.2")
+    // https://mvnrepository.com/artifact/de.mkammerer/argon2-jvm
+    implementation 'de.mkammerer:argon2-jvm:2.11'
 
 
 }
